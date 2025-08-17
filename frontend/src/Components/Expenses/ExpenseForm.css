@@ -1,0 +1,98 @@
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+
+.expense-form input,
+.expense-form textarea,
+.expense-form select {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background: transparent;
+  resize: none;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+  color: rgba(34, 34, 96, 0.9);
+  width: 100%;
+}
+
+.expense-form input::placeholder,
+.expense-form textarea::placeholder {
+  color: rgba(34, 34, 96, 0.4);
+}
+
+
+.input-control input {
+  width: 100%;
+}
+
+.selects {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+
+
+.selects select {
+  color: rgba(34, 34, 96, 0.4);
+  width: 65%; 
+  min-width: 150px; 
+}
+
+.selects select:focus,
+.selects select:active {
+  color: rgba(34, 34, 96, 1);
+}
+
+
+.submit-btn button {
+  width: 75%;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
+
+.submit-btn button:hover {
+  background: var(--color-green) !important;
+}
+
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .expense-form {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .expense-form input,
+  .expense-form textarea,
+  .expense-form select {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .submit-btn button {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .selects select {
+    width: 70%; 
+  }
+}
+
+@media (min-width: 641px) {
+  .expense-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,147 @@
+.income-item {
+  background: #FCF6F9;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  color: #222260;
+}
+
+.income-item .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+  font-size: 2.6rem;
+}
+
+.income-item .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.income-item .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  width: 100%;
+  overflow: hidden; 
+}
+
+.income-item .text {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.income-item .btn-con {
+  flex-shrink: 0; 
+}
+
+
+.income-item h5 {
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.income-item h5::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--indicator-color);
+}
+
+.income-item .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; 
+  width: 100%;
+  overflow: hidden; 
+}
+
+.income-item .text {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  flex: 1; 
+}
+
+.income-item .btn-con {
+  flex-shrink: 0; 
+}
+
+
+.income-item .text p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+  .income-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .income-item .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .income-item .inner-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .income-item .text {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .income-item h5 {
+    font-size: 1.1rem;
+  }
+
+  .income-item .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
+
+  .income-item .text p {
+    font-size: 0.9rem;
+  }
+}

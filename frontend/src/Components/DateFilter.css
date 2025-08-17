@@ -1,0 +1,84 @@
+.date-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  max-width: 700px;
+  margin: 1rem 0;
+}
+
+.df-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  white-space: nowrap;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.df-select,
+.df-input {
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  background: #fafafa;
+  min-width: 110px;
+  outline-offset: 2px;
+}
+
+.df-select:focus,
+.df-input:focus {
+  border-color: #2a9d8f;
+  background: #fff;
+  box-shadow: 0 0 5px #2a9d8f;
+}
+
+.df-range-separator {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #555;
+  user-select: none;
+  padding: 0 5px;
+}
+
+.df-button {
+  cursor: pointer;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 0.55rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.df-button:hover,
+.df-button:focus {
+  background-color: #21867a;
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .date-filter-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .df-select,
+  .df-input,
+  .df-button {
+    min-width: 100%;
+  }
+  .df-range-separator {
+    display: none;
+  }
+}
