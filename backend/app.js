@@ -19,7 +19,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const allowedOrigins = [
-  "http://localhost:5173",    // development
   "https://fin-log.vercel.app" // production
 ];
 
