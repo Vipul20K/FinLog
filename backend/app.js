@@ -3,6 +3,7 @@ const cors = require('cors');
 const { db } = require('./db/db');
 const authRoutes = require('./routes/auth'); 
 const transactionRoutes = require('./routes/transactions'); 
+const userRoutes=require('./routes/userRoutes');
 
 
 require('dotenv').config();
@@ -30,7 +31,7 @@ app.use(cors({
       callback(new Error("Not allowed by CORS"));
     }
   },
-  credentials: true
+
 }));
 
 // Auth-Routes
@@ -39,7 +40,8 @@ app.use('/api/v1', authRoutes);
 //Transaction Routes
 app.use('/api/v1', transactionRoutes);
 
-
+//User Routes
+app.use('/api/v1', userRoutes); 
 
 const server = () => {
   db();
