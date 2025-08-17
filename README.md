@@ -41,7 +41,7 @@ A **full-stack expense tracker** application that allows users to manage **incom
 🚀 Installation & Setup
 
 # 1. Clone the repository
-git clone https://github.com/your-username/finlog-expense-tracker.git
+git clone https://github.com/your-username/finlog.git
 cd finlog-expense-tracker
 
 # 2. Install dependencies
