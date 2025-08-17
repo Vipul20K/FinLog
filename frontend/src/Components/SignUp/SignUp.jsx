@@ -31,7 +31,7 @@ const Signup = () => {
 
   return (
     <form className="signup-form" onSubmit={handleSubmit}>
-      <h2>Sign Up to WalletFlow</h2>
+      <h2>Sign Up to FinLog</h2>
 
       <input
         type="text"
