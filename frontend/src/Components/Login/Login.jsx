@@ -24,7 +24,7 @@ const Login = () => {
 
   return (
     <form className="login-form" onSubmit={handleSubmit}>
-      <h2>Login to WalletFlow</h2>
+      <h2>Login to FinLog</h2>
 
       <input
         type="email"
